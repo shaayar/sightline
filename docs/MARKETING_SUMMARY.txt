@@ -1,0 +1,120 @@
+================================================================================
+SIGHTLINE WEBSITE + MARKETING — EXECUTIVE SUMMARY
+================================================================================
+
+YOUR QUESTIONS ANSWERED:
+
+1. DO WE NEED A WEBSITE?
+   YES. Absolutely required for:
+   • Trust signal for paid users
+   • Legal compliance (Privacy + Terms for Chrome Web Store)
+   • Marketing hub (SEO content, pricing clarity, support center)
+   • Future scaling (hub for other extensions)
+
+2. WHAT PAGES DO WE NEED?
+   Essential (v1.0):
+   • Homepage (/) — hero, features, social proof, CTA
+   • Features (/features) — deep dive on inspector, guides, cascade
+   • Pricing (/pricing) — Free vs Pro vs Team table + FAQ
+   • FAQ (/faq) — 20-30 common questions
+   • Privacy (/privacy) — required for CWS
+   • Terms (/terms) — required for CWS
+   • Support (/support or /contact) — contact form + help links
+
+   Nice-to-have (v1.1+):
+   • Blog (/blog) — SEO content, tutorials, use cases
+   • Changelog (/changelog) — version history, transparency
+   • Status page — link to status.io (only if you have servers)
+
+3. DO WE NEED AN ADMIN PANEL?
+   NO, not yet. 
+   
+   Phase 1 (now → $1K MRR): Use existing tools
+   • Revenue: ExtensionPay dashboard
+   • Support: email inbox + GitHub Issues + Canny.io
+   • Analytics: Chrome Web Store dashboard
+   
+   Phase 2 ($1K-5K MRR): Add lightweight admin panel
+   • Dashboard showing MRR, churn, user count
+   • Support ticket queue
+   • In-app announcements
+   
+   Phase 3 ($5K+ MRR): Full analytics
+   • User cohorts, feature adoption, error tracking
+   • Build if/when you need it
+
+4. TECH STACK RECOMMENDATION: FRAMER (fastest launch)
+   • 2-3 hours to go live
+   • Beautiful templates, no coding
+   • Free tier + $20/mo custom domain
+   • Alternative: Next.js + Vercel (more control, 4-6h to build)
+
+================================================================================
+MARKETING STRATEGY TLDR:
+
+PRE-LAUNCH (3 weeks before):
+✓ Build email list: 200-500 people
+✓ Set up Twitter, GitHub, Canny, Indie Hackers
+✓ Create website on Framer
+
+LAUNCH DAY (coordinated):
+✓ Email announcement
+✓ Twitter thread + Product Hunt submission
+✓ Reddit + Indie Hackers
+✓ Monitor & respond to feedback
+
+MONTH 1-3 (early growth):
+✓ Publish 1 blog post every 2 weeks (6 total)
+✓ Respond to all community feedback
+✓ Target: 5,000-12,000 installs, $1,500 MRR
+
+MONTH 3-12 (scale):
+✓ Blog content becomes SEO engine (organic growth)
+✓ Partner outreach (agencies, educators, platforms)
+✓ Optional: paid ads (Google Search, Twitter) if ROI is clear
+
+EXPECTED RESULTS (Year 1):
+• 50,000-100,000 installs
+• $10,000-15,000 MRR
+• 5,000-10,000 email subscribers
+• Top 3 on Product Hunt (launch day)
+
+================================================================================
+FILES CREATED:
+
+1. WEBSITE_SPEC.md
+   - Detailed page specifications (Homepage, Features, Pricing, FAQ, etc.)
+   - Full Stitch AI prompt for Google's website builder
+   - Tech stack comparison (Framer vs Next.js vs Webflow)
+   - Admin panel strategy
+
+2. MARKETING_STRATEGY.md (comprehensive 15-section guide)
+   - Pre-launch strategy (build audience before ship)
+   - Launch week playbook (Product Hunt, Twitter, Reddit)
+   - Content marketing & SEO roadmap
+   - Community & partnership strategy
+   - Paid acquisition (when/how to scale)
+   - Monthly targets & success metrics
+   - Budget breakdown ($48-368/year)
+   - 30-60-90 day plan
+
+3. LAUNCH_CHECKLIST.md (inside strategy doc)
+   - One-week-before checklist
+   - Launch day tasks
+   - Week 1 post-launch follow-up
+
+================================================================================
+QUICK ACTION ITEMS (This week):
+
+1. ✓ Decide: Framer (fast) or Next.js (flexible)?
+2. Create Twitter account: @buildsightline or @sightlinedev
+3. Create Substack/Buttondown for email list
+4. Reserve sightline.dev domain
+5. Write website copy (use WEBSITE_SPEC.md as guide)
+6. Start building website (2-4 hours on Framer)
+7. Create 3 launch day tweets in a draft document
+8. Email 10-15 web dev friends: "beta testers needed"
+
+================================================================================
+END SUMMARY
+================================================================================

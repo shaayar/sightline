@@ -6,7 +6,9 @@ import classNames from "classnames";
 
 import { baseURL, meta } from "@/resources/seo";
 import { fonts, style, dataStyle } from "@/resources/once-ui.config";
-import { Meta, Schema,  Column, Flex, Mask, MatrixFx, ThemeInit} from "@once-ui-system/core";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { Meta, Schema, Column, Flex, Mask, MatrixFx, ThemeInit } from "@once-ui-system/core";
 import { Providers } from '@/components/Providers';
 
 export async function generateMetadata() {
@@ -77,7 +79,9 @@ export default function RootLayout({
               />
             </Mask>
           </Column>
-          {children}
+          <Header />
+          <main className="relative z-10">{children}</main>
+          <Footer />
         </Column>
       </Providers>
     </Flex>
