@@ -2,77 +2,51 @@ import { Avatar, Background, Button, Column, IconButton, Logo, Mask, Particle, R
 
 const social = [
   {
-    icon: "discord",
-    label: "Discord",
-    href: "https://discord.com/invite/5EyAQ4eNdS" },
-  {
     icon: "github",
     label: "GitHub",
-    href: "https://github.com/once-ui-system",
+    href: "https://github.com/buildsightline",
   },
   {
     icon: "email",
     label: "Email",
-    href: "mailto:demo@email.com",
+    href: "mailto:support@sightline.dev",
   },
 ];
 
 const navigation = [
   {
-    title: "Free",
+    title: "Product",
     items: [
-      { label: "All Products", href: "#" },
-      { label: "Once UI Core", href: "#" },
-      { label: "Magic Portfolio", href: "#" },
-      { label: "Magic Docs", href: "#" },
-      { label: "Magic Bio", href: "#" },
-      { label: "Once UI Figma", href: "#" },
+      { label: "Features", href: "/features" },
+      { label: "Pricing", href: "/pricing" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Support", href: "/support" },
     ],
   },
   {
-    title: "Pro",
+    title: "Features",
     items: [
-      { label: "Supa Social", href: "#", tag: "New" },
-      { label: "Magic Studio", href: "#", tag: "New" },
-      { label: "Supabase Starter", href: "#" },
-      { label: "Magic Convert", href: "#" },
-      { label: "Magic Spotlight", href: "#" },
-      { label: "Magic Journal", href: "#", tag: "New" },
-      { label: "Magic Store", href: "#" },
-      { label: "Magic Agent", href: "#" },
-      { label: "Once UI Blocks", href: "#" },
-    ]
-  },
-  {
-    title: "Learn",
-    items: [
-      { label: "Pricing", href: "#" },
-      { label: "Services", href: "#", tag: "New" },
-      { label: "Canvas", href: "#", tag: "New" },
-      { label: "Documentation", href: "#" },
-      { label: "Roadmap", href: "#" },
-      { label: "Changelog", href: "#" },
-      { label: "Handbook", href: "#", tag: "New" },
+      { label: "Guide Lines", href: "/features" },
+      { label: "Box Model Inspector", href: "/features" },
+      { label: "CSS Cascade Debugger", href: "/features" },
+      { label: "Typography Inspector", href: "/features" },
     ],
   },
   {
     title: "Resources",
     items: [
-      { label: "Blog", href: "#" },
-      { label: "About us", href: "#" },
-      { label: "Contact us", href: "#" },
-      { label: "Sponsor us", href: "#" },
-      { label: "Merch store", href: "#" },
-      { label: "Brand assets", href: "#" },
+      { label: "Blog", href: "/blog" },
+      { label: "Changelog", href: "/changelog" },
+      { label: "Chrome Web Store", href: "#" },
+      { label: "GitHub", href: "https://github.com/buildsightline" },
     ],
   },
   {
     title: "Legal",
     items: [
-      { label: "Terms of Use", href: "#" },
-      { label: "Privacy Policy", href: "#" },
-      { label: "License Agreement", href: "#" },
-    ]
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+    ],
   },
 ];
 
@@ -152,13 +126,17 @@ export const Footer = (flex: React.ComponentProps<typeof Column>) => {
             <Column horizontal="center" gap="20">
               <TypeFx
                 variant="display-strong-m"
-                words={["Ship your product.", "Build a presence.", "Launch seamlessly."]}
+                words={[
+  "Debug CSS visually.",
+  "Inspect websites instantly.",
+  "Build pixel-perfect interfaces."
+]}
                 speed={80}
                 hold={2000}
                 trigger="instant"
               />
-              <Button data-border="rounded" id="hero-cta-button" href="#" arrowIcon>
-                Start now
+              <Button data-border="rounded" id="hero-cta-button" href="/pricing" arrowIcon>
+                Install Free
               </Button>
             </Column>
           </Column>
@@ -346,10 +324,10 @@ export const Footer = (flex: React.ComponentProps<typeof Column>) => {
           <Row fillWidth overflow="hidden" minWidth={4} l={{hide: true}}/>
         </Row>
         <Row gap="8" paddingY="24" center maxWidth="xl" textVariant="label-default-s" onBackground="neutral-medium" borderX="neutral-alpha-medium">
-          Built with curiosity by{" "}
+          Built by Developers, for Developers {" "}
           <SmartLink href="#" unstyled>
             <Avatar size="xs" src="/images/creators/lorant.jpg"/>
-            Lorant One
+            Sightline Team
           </SmartLink>
         </Row>
         <Row flex={1}>

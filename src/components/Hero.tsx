@@ -16,17 +16,25 @@ export function Hero() {
             paddingY="128"
             gap="xl"
         >
-            <Column gap="m" align="center" horizontal="center">
-                <Badge>Chrome Extension for Web Developers</Badge>
+            <Column
+                gap="m"
+                align="center"
+                horizontal="center"
+            >
+                <Badge>
+                    Chrome Extension for Web Developers
+                </Badge>
 
                 <Heading
-                    as="h1"
-                    variant="display-strong-xl"
+                    variant="display-default-l"
+                    marginTop="12"
                     align="center"
                 >
                     CSS Debugging.
                     <br />
-                    Finally Visual.
+                    <Text onBackground="brand-weak">
+                        Finally Visual.
+                    </Text>
                 </Heading>
 
                 <Text
@@ -34,29 +42,41 @@ export function Hero() {
                     onBackground="neutral-weak"
                     align="center"
                     wrap="balance"
-                    style={{ maxWidth: "800px" }}
+                    style={{
+                        maxWidth: "800px",
+                    }}
                 >
                     Inspect spacing, typography, colors, layouts and
                     CSS cascade directly on the page.
                     No DevTools digging required.
                 </Text>
 
-                <Row gap="m" horizontal="center">
+                <Row
+                    gap="m"
+                    horizontal="center"
+                    wrap
+                >
                     <Button href="/features">
                         Install Free on Chrome
                     </Button>
 
-                    <Button href="/pricing" variant="secondary">
+                    <Button
+                        href="/pricing"
+                        variant="secondary"
+                    >
                         View Pricing
                     </Button>
                 </Row>
 
-                <Text onBackground="neutral-weak">
-                    Built for freelancers, frontend developers and design QA teams.
+                <Text
+                    onBackground="neutral-weak"
+                    align="center"
+                >
+                    Built for freelancers, frontend developers and
+                    design QA teams.
                 </Text>
             </Column>
 
-            {/* Hero Preview */}
             <Column
                 fillWidth
                 padding="l"

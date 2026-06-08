@@ -80,7 +80,13 @@ export default function RootLayout({
             </Mask>
           </Column>
           <Header />
-          <main className="relative z-10">{children}</main>
+          <main className="relative z-10">
+            <Column fillWidth horizontal="center" paddingX="l">
+              <Column fillWidth maxWidth="xl">
+                {children}
+              </Column>
+            </Column>
+          </main>
           <Footer />
         </Column>
       </Providers>

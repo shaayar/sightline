@@ -1,65 +1,170 @@
+import React from "react";
 import {
+    Background,
     Column,
     Grid,
     Heading,
+    Icon,
+    Row,
     Text,
-    Card,
 } from "@once-ui-system/core";
 
-export function ProblemSection() {
+const features = [
+    {
+        title: "CSS Cascade Debugger",
+        description:
+            "See every matching CSS rule, specificity score, and winning selector directly on the page.",
+        icon: "refresh",
+    },
+    {
+        title: "Visual Box Model",
+        description:
+            "Inspect margins, padding, borders, and content areas without opening DevTools.",
+        icon: "refresh",
+    },
+    {
+        title: "Guide Lines",
+        description:
+            "Drop horizontal and vertical guides that stay synced across tabs and browser sessions.",
+        icon: "refresh",
+    },
+    {
+        title: "Typography Inspector",
+        description:
+            "Identify font family, size, weight, line-height, and colors instantly.",
+        icon: "refresh",
+    },
+    {
+        title: "Design QA",
+        description:
+            "Validate layouts, spacing, and visual consistency with pixel-perfect precision.",
+        icon: "refresh",
+    },
+    {
+        title: "Built for Developers",
+        description:
+            "Works on localhost, staging environments, production websites, and design references.",
+        icon: "refresh",
+    },
+];
+
+export const ProblemSection: React.FC<
+    React.ComponentProps<typeof Row>
+> = ({ ...flex }) => {
     return (
         <Column
             fillWidth
-            maxWidth="xl"
             horizontal="center"
-            gap="xl"
-            paddingY="128"
+            borderTop="neutral-medium"
+            {...flex}
         >
-            <Column gap="s" align="center">
-                <Heading variant="display-strong-m">
-                    The CSS Problems You Fight Every Day
-                </Heading>
+            <Row
+                fillWidth
+                horizontal="center"
+                borderLeft="neutral-medium"
+                borderRight="neutral-medium"
+            >
+                <Background
+                    fill={false}
+                    fillWidth
+                    s={{ hide: true }}
+                    borderRight="neutral-medium"
+                    mask={{ x: 100, y: 50, radius: 50 }}
+                    lines={{
+                        display: true,
+                        size: "8",
+                        angle: -45,
+                        thickness: 1,
+                        color: "neutral-border-medium",
+                    }}
+                />
 
-                <Text
-                    onBackground="neutral-weak"
-                    align="center"
-                >
-                    Sightline brings the most useful parts of DevTools
-                    directly onto the page.
-                </Text>
-            </Column>
+                <Column fillWidth>
+                    <Column
+                        fillWidth
+                        horizontal="center"
+                        padding="32"
+                    >
+                        <Heading
+                            as="h2"
+                            variant="heading-strong-l"
+                            align="center"
+                            marginBottom="8"
+                        >
+                            Everything You Need To Inspect A Website
+                        </Heading>
 
-            <Grid columns="3" gap="l">
-                <Card padding="l">
-                    <Heading variant="heading-strong-m">
-                        Why isn't my CSS working?
-                    </Heading>
+                        <Text
+                            align="center"
+                            onBackground="neutral-strong"
+                            variant="body-default-s"
+                        >
+                            Sightline brings the most useful parts of DevTools directly onto the page.
+                        </Text>
+                    </Column>
+                </Column>
 
-                    <Text onBackground="neutral-weak">
-                        Find the winning selector instantly.
-                    </Text>
-                </Card>
+                <Background
+                    fill={false}
+                    fillWidth
+                    s={{ hide: true }}
+                    borderLeft="neutral-medium"
+                    mask={{ x: 0, y: 50, radius: 50 }}
+                    lines={{
+                        display: true,
+                        size: "8",
+                        angle: 45,
+                        thickness: 1,
+                        color: "neutral-border-medium",
+                    }}
+                />
+            </Row>
 
-                <Card padding="l">
-                    <Heading variant="heading-strong-m">
-                        How much spacing is that?
-                    </Heading>
+            <Grid
+                borderLeft="neutral-medium"
+                borderTop="neutral-medium"
+                columns="3"
+                m={{ columns: 2 }}
+                s={{ columns: 1 }}
+            >
+                {features.map((feature, index) => (
+                    <Column
+                        key={index}
+                        fillWidth
+                        gap="16"
+                        padding="40"
+                        borderBottom="neutral-medium"
+                        borderRight="neutral-medium">
+                        <Row
+                            gap="16"
+                            vertical="center"
+                            fillWidth>
+                            <Icon
+                                name={feature.icon}
+                                size="m"
+                                onBackground="brand-weak"
+                            />
 
-                    <Text onBackground="neutral-weak">
-                        Visualize margin, padding and borders.
-                    </Text>
-                </Card>
+                            <Column gap="4">
+                                <Heading
+                                    as="h3"
+                                    variant="body-default-m"
+                                >
+                                    {feature.title}
+                                </Heading>
 
-                <Card padding="l">
-                    <Heading variant="heading-strong-m">
-                        Does this match the design?
-                    </Heading>
-
-                    <Text onBackground="neutral-weak">
-                        Use guides and overlays for pixel-perfect QA.
-                    </Text>
-                </Card>
+                                <Text
+                                    variant="body-default-s"
+                                    onBackground="neutral-weak"
+                                    wrap="balance"
+                                >
+                                    {feature.description}
+                                </Text>
+                            </Column>
+                        </Row>
+                    </Column>
+                ))}
             </Grid>
         </Column>
     );
-}
+};
