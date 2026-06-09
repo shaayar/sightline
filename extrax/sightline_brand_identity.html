@@ -1,0 +1,300 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:var(--font-sans); margin: 5em;}
+.root{padding:1rem 0 2.5rem;}
+.section{margin-bottom:2.5rem;}
+.label{font-size:11px;font-weight:500;color:var(--color-text-tertiary);letter-spacing:.07em;text-transform:uppercase;margin-bottom:12px;}
+
+/* Hero */
+.hero{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:2rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap;margin-bottom:2.5rem;}
+.logo-lockup{display:flex;align-items:center;gap:16px;}
+.logo-name{font-size:32px;font-weight:500;letter-spacing:-.02em;color:var(--color-text-primary);}
+.tagline{font-size:14px;color:var(--color-text-secondary);margin-top:6px;line-height:1.5;}
+.alts{margin-top:1.5rem;}
+.alt-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;}
+.alt-chip{font-size:12px;padding:4px 12px;border-radius:20px;border:0.5px solid var(--color-border-secondary);color:var(--color-text-secondary);background:var(--color-background-primary);}
+
+/* Colors */
+.palette{display:flex;gap:10px;flex-wrap:wrap;}
+.swatch-wrap{flex:1;min-width:80px;}
+.swatch{height:64px;border-radius:var(--border-radius-md);margin-bottom:6px;}
+.swatch-name{font-size:11px;font-weight:500;color:var(--color-text-primary);}
+.swatch-hex{font-size:10px;color:var(--color-text-tertiary);font-family:var(--font-mono);}
+
+/* Icon sizes */
+.icon-row{display:flex;gap:16px;align-items:flex-end;}
+.icon-wrap{display:flex;flex-direction:column;align-items:center;gap:8px;}
+.icon-label{font-size:10px;color:var(--color-text-tertiary);}
+
+/* Type specimens */
+.type-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.type-card{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:16px;}
+.type-spec{font-size:10px;color:var(--color-text-tertiary);font-family:var(--font-mono);margin-bottom:8px;}
+
+/* Ideas */
+.ideas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;}
+.idea-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:14px 16px;}
+.idea-tag{font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;display:inline-block;margin-bottom:8px;}
+.tag-feature{background:#EFF6FF;color:#1D4ED8;}
+.tag-new{background:#F0FDF4;color:#166534;}
+.tag-hot{background:#FEF9C3;color:#854D0E;}
+.idea-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px;}
+.idea-desc{font-size:12px;color:var(--color-text-secondary);line-height:1.5;}
+.idea-rev{font-size:11px;color:var(--color-text-tertiary);margin-top:8px;padding-top:8px;border-top:0.5px solid var(--color-border-tertiary);}
+
+.divider{height:0.5px;background:var(--color-border-tertiary);margin:2rem 0;}
+
+/* Positioning */
+.pos-card{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:16px 20px;}
+.pos-row{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:0.5px solid var(--color-border-tertiary);}
+.pos-row:last-child{border-bottom:none;}
+.pos-name{font-size:12px;font-weight:500;color:var(--color-text-secondary);min-width:90px;flex-shrink:0;}
+.pos-bar-wrap{flex:1;height:20px;background:var(--color-background-primary);border-radius:20px;overflow:hidden;display:flex;align-items:center;}
+.pos-bar{height:100%;border-radius:20px;display:flex;align-items:center;padding-left:10px;font-size:10px;font-weight:500;color:white;}
+</style>
+
+<div class="root">
+
+  <!-- Hero -->
+  <div class="section">
+    <div class="label">Chosen name</div>
+    <div class="hero">
+      <div>
+        <div class="logo-lockup">
+          <!-- Logo mark SVG -->
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="52" height="52" rx="13" fill="#1D4ED8"/>
+            <!-- Crosshair lines -->
+            <line x1="26" y1="8" x2="26" y2="44" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/>
+            <line x1="8" y1="26" x2="44" y2="26" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/>
+            <!-- Center reticle -->
+            <circle cx="26" cy="26" r="7" stroke="white" stroke-width="2" fill="none"/>
+            <circle cx="26" cy="26" r="2.5" fill="white"/>
+            <!-- Corner marks -->
+            <path d="M10 16 L10 10 L16 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/>
+            <path d="M42 16 L42 10 L36 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/>
+            <path d="M10 36 L10 42 L16 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/>
+            <path d="M42 36 L42 42 L36 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/>
+          </svg>
+          <div>
+            <div class="logo-name">Sightline</div>
+            <div style="font-size:11px;color:var(--color-text-tertiary);font-family:var(--font-mono);letter-spacing:.04em;">sightline.dev</div>
+          </div>
+        </div>
+        <div class="tagline">Pixel-perfect visibility for every element on the web.</div>
+      </div>
+      <div style="flex:1;min-width:200px;">
+        <div style="font-size:12px;color:var(--color-text-secondary);line-height:1.7;">
+          <strong style="font-weight:500;color:var(--color-text-primary);">Why Sightline:</strong> A sightline is the unobstructed line of vision to a target — exactly what developers need when inspecting, aligning, and measuring web elements. It implies precision, clarity, and direction. Short, memorable, professional. The word works across all features: guide lines, box model inspector, color picker, overlays.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Color Palette -->
+  <div class="section">
+    <div class="label">Brand color palette</div>
+    <div class="palette">
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#1D4ED8;"></div>
+        <div class="swatch-name">Cobalt</div>
+        <div class="swatch-hex">#1D4ED8</div>
+        <div style="font-size:10px;color:var(--color-text-tertiary);">Primary — logo, CTA buttons, guide lines</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#0EA5E9;"></div>
+        <div class="swatch-name">Sky</div>
+        <div class="swatch-hex">#0EA5E9</div>
+        <div style="font-size:10px;color:var(--color-text-tertiary);">Accent — hover states, badges</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#10B981;"></div>
+        <div class="swatch-name">Mint</div>
+        <div class="swatch-hex">#10B981</div>
+        <div style="font-size:10px;color:var(--color-text-tertiary);">Success / active states, padding overlay</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#F59E0B;"></div>
+        <div class="swatch-name">Amber</div>
+        <div class="swatch-hex">#F59E0B</div>
+        <div style="font-size:10px;color:var(--color-text-tertiary);">Vertical guides, margin overlay, warnings</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#0F172A;"></div>
+        <div class="swatch-name">Ink</div>
+        <div class="swatch-hex">#0F172A</div>
+        <div style="font-size:10px;color:var(--color-text-tertiary);">UI tray background, tooltips</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#F8FAFC;border:0.5px solid #E2E8F0;"></div>
+        <div class="swatch-name">Canvas</div>
+        <div class="swatch-hex">#F8FAFC</div>
+        <div style="font-size:10px;color:var(--color-text-tertiary);">Website, cards, background</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Icon sizes -->
+  <div class="section">
+    <div class="label">Extension icon at all sizes</div>
+    <div class="icon-row">
+      <div class="icon-wrap">
+        <svg width="128" height="128" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="13" fill="#1D4ED8"/><line x1="26" y1="8" x2="26" y2="44" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/><line x1="8" y1="26" x2="44" y2="26" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/><circle cx="26" cy="26" r="7" stroke="white" stroke-width="2" fill="none"/><circle cx="26" cy="26" r="2.5" fill="white"/><path d="M10 16 L10 10 L16 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M42 16 L42 10 L36 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M10 36 L10 42 L16 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M42 36 L42 42 L36 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/></svg>
+        <div class="icon-label">128px</div>
+      </div>
+      <div class="icon-wrap">
+        <svg width="64" height="64" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="13" fill="#1D4ED8"/><line x1="26" y1="8" x2="26" y2="44" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/><line x1="8" y1="26" x2="44" y2="26" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/><circle cx="26" cy="26" r="7" stroke="white" stroke-width="2" fill="none"/><circle cx="26" cy="26" r="2.5" fill="white"/><path d="M10 16 L10 10 L16 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M42 16 L42 10 L36 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M10 36 L10 42 L16 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M42 36 L42 42 L36 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/></svg>
+        <div class="icon-label">64px</div>
+      </div>
+      <div class="icon-wrap">
+        <svg width="48" height="48" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="13" fill="#1D4ED8"/><line x1="26" y1="8" x2="26" y2="44" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/><line x1="8" y1="26" x2="44" y2="26" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/><circle cx="26" cy="26" r="7" stroke="white" stroke-width="2" fill="none"/><circle cx="26" cy="26" r="2.5" fill="white"/><path d="M10 16 L10 10 L16 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M42 16 L42 10 L36 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M10 36 L10 42 L16 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M42 36 L42 42 L36 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/></svg>
+        <div class="icon-label">48px</div>
+      </div>
+      <div class="icon-wrap">
+        <svg width="32" height="32" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="13" fill="#1D4ED8"/><line x1="26" y1="8" x2="26" y2="44" stroke="white" stroke-width="2" stroke-dasharray="4 3" opacity=".6"/><line x1="8" y1="26" x2="44" y2="26" stroke="white" stroke-width="2" stroke-dasharray="4 3" opacity=".6"/><circle cx="26" cy="26" r="8" stroke="white" stroke-width="2.5" fill="none"/><circle cx="26" cy="26" r="3" fill="white"/></svg>
+        <div class="icon-label">32px</div>
+      </div>
+      <div class="icon-wrap">
+        <svg width="16" height="16" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="11" fill="#1D4ED8"/><line x1="26" y1="6" x2="26" y2="46" stroke="white" stroke-width="3" opacity=".7"/><line x1="6" y1="26" x2="46" y2="26" stroke="white" stroke-width="3" opacity=".7"/><circle cx="26" cy="26" r="8" stroke="white" stroke-width="3" fill="none"/></svg>
+        <div class="icon-label">16px</div>
+      </div>
+      <!-- Dark bg version -->
+      <div class="icon-wrap" style="background:#0F172A;padding:12px;border-radius:12px;">
+        <svg width="48" height="48" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="13" fill="#1D4ED8"/><line x1="26" y1="8" x2="26" y2="44" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/><line x1="8" y1="26" x2="44" y2="26" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/><circle cx="26" cy="26" r="7" stroke="white" stroke-width="2" fill="none"/><circle cx="26" cy="26" r="2.5" fill="white"/><path d="M10 16 L10 10 L16 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M42 16 L42 10 L36 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M10 36 L10 42 L16 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M42 36 L42 42 L36 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/></svg>
+        <div class="icon-label" style="color:rgba(255,255,255,.4);">dark bg</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Typography -->
+  <div class="section">
+    <div class="label">Typography</div>
+    <div class="type-grid">
+      <div class="type-card">
+        <div class="type-spec">Display / hero — 32px / 500</div>
+        <div style="font-size:28px;font-weight:500;color:var(--color-text-primary);letter-spacing:-.02em;line-height:1.2;">See every pixel clearly.</div>
+      </div>
+      <div class="type-card">
+        <div class="type-spec">Tagline — 15px / 400</div>
+        <div style="font-size:15px;color:var(--color-text-secondary);line-height:1.6;">The all-in-one design inspection tool for developers building pixel-perfect websites.</div>
+      </div>
+      <div class="type-card">
+        <div class="type-spec">UI label — 11px / 500 / mono</div>
+        <div style="font-size:11px;font-weight:500;font-family:var(--font-mono);color:var(--color-text-secondary);letter-spacing:.06em;text-transform:uppercase;">Padding · Margin · Border · Font</div>
+      </div>
+      <div class="type-card">
+        <div class="type-spec">Tray button style — 12px / 500</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="background:#1D4ED822;border:1px solid #1D4ED855;color:#1D4ED8;border-radius:8px;padding:5px 12px;font-size:12px;font-weight:500;">◈ Inspect</span>
+          <span style="background:#10B98133;border:1px solid #10B98177;color:#10B981;border-radius:8px;padding:5px 12px;font-size:12px;font-weight:500;">─ H</span>
+          <span style="background:#F59E0B22;border:1px solid #F59E0B55;color:#F59E0B;border-radius:8px;padding:5px 12px;font-size:12px;font-weight:500;">│ V</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Market positioning -->
+  <div class="section">
+    <div class="label">Where Sightline sits in the market — feature coverage</div>
+    <div class="pos-card">
+      <div class="pos-row" style="padding-top:0;">
+        <div class="pos-name" style="font-size:11px;color:var(--color-text-tertiary);">Tool</div>
+        <div style="flex:1;font-size:11px;color:var(--color-text-tertiary);">Feature breadth</div>
+        <div style="width:70px;font-size:11px;color:var(--color-text-tertiary);text-align:right;">Price</div>
+      </div>
+      <div class="pos-row">
+        <div class="pos-name">WhatFont</div>
+        <div class="pos-bar-wrap"><div class="pos-bar" style="width:12%;background:#94a3b8;">fonts only</div></div>
+        <div style="width:70px;font-size:11px;color:var(--color-text-secondary);text-align:right;">free</div>
+      </div>
+      <div class="pos-row">
+        <div class="pos-name">PerfectPixel</div>
+        <div class="pos-bar-wrap"><div class="pos-bar" style="width:18%;background:#94a3b8;">overlay only</div></div>
+        <div style="width:70px;font-size:11px;color:var(--color-text-secondary);text-align:right;">freemium</div>
+      </div>
+      <div class="pos-row">
+        <div class="pos-name">CSS Peeper</div>
+        <div class="pos-bar-wrap"><div class="pos-bar" style="width:38%;background:#64748b;">styles + colors</div></div>
+        <div style="width:70px;font-size:11px;color:var(--color-text-secondary);text-align:right;">$4/mo</div>
+      </div>
+      <div class="pos-row">
+        <div class="pos-name">Hoverify</div>
+        <div class="pos-bar-wrap"><div class="pos-bar" style="width:62%;background:#475569;">inspector + responsive + assets</div></div>
+        <div style="width:70px;font-size:11px;color:var(--color-text-secondary);text-align:right;">$30/yr</div>
+      </div>
+      <div class="pos-row" style="border-bottom:none;">
+        <div class="pos-name" style="color:#1D4ED8;font-weight:500;">Sightline ✦</div>
+        <div class="pos-bar-wrap"><div class="pos-bar" style="width:90%;background:#1D4ED8;">guides + inspector + CSS + grid + overlay + AI</div></div>
+        <div style="width:70px;font-size:11px;color:#1D4ED8;font-weight:500;text-align:right;">$5/mo</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- New ideas from research -->
+  <div class="section">
+    <div class="label">New features for Sightline (from research)</div>
+    <div class="ideas-grid">
+      <div class="idea-card">
+        <span class="idea-tag tag-hot">unique, low competition</span>
+        <div class="idea-title">CSS Specificity Debugger</div>
+        <div class="idea-desc">Hover any element — see which CSS rule is winning, its specificity score (0,2,1), and exactly why your styles are being overridden. Solves the #1 CSS frustration.</div>
+        <div class="idea-rev">Pro feature · no competitor has this</div>
+      </div>
+      <div class="idea-card">
+        <span class="idea-tag tag-feature">Pro feature</span>
+        <div class="idea-title">Accessibility overlay</div>
+        <div class="idea-desc">Hover any element and see its WCAG contrast ratio, ARIA role, alt text status, and tab order. Flag violations in red directly on the page.</div>
+        <div class="idea-rev">Growing legal requirement · $5K+/mo potential</div>
+      </div>
+      <div class="idea-card">
+        <span class="idea-tag tag-feature">Pro feature</span>
+        <div class="idea-title">AI "explain this element"</div>
+        <div class="idea-desc">Right-click any element while inspecting → AI explains what the CSS is doing in plain English. "This has overflow:hidden because..." Great for learners and for debugging inherited styles.</div>
+        <div class="idea-rev">Uses Claude API · premium gate · viral</div>
+      </div>
+      <div class="idea-card">
+        <span class="idea-tag tag-feature">Team feature</span>
+        <div class="idea-title">Annotation comments</div>
+        <div class="idea-desc">Drop a pin anywhere on the page and leave a text comment — like Figma's comment mode. Comments persist and sync across team members. Perfect for design QA handoffs.</div>
+        <div class="idea-rev">Team tier justification · $12/seat/mo</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">New standalone extension ideas from research</div>
+    <div class="ideas-grid">
+      <div class="idea-card" style="border-color:var(--color-border-info);background:var(--color-background-info);">
+        <span class="idea-tag" style="background:#DBEAFE;color:#1E40AF;">new product · low competition</span>
+        <div class="idea-title" style="color:var(--color-text-info);">CSS Cascade Detective</div>
+        <div class="idea-desc" style="color:var(--color-text-info);opacity:.85;">Dedicated tool for debugging why CSS isn't applying. Shows the full cascade chain for any property — inherited values, overrides, specificity wars. The "why isn't my CSS working?" answer machine.</div>
+        <div class="idea-rev">Intermediate build · $5/mo · huge dev pain point</div>
+      </div>
+      <div class="idea-card" style="border-color:var(--color-border-info);background:var(--color-background-info);">
+        <span class="idea-tag" style="background:#DBEAFE;color:#1E40AF;">new product · medium competition</span>
+        <div class="idea-title" style="color:var(--color-text-info);">API Response Inspector</div>
+        <div class="idea-desc" style="color:var(--color-text-info);opacity:.85;">A clean sidebar panel showing all API calls made by the page — filter by status, search bodies, export as cURL. Lightweight alternative to the DevTools Network tab for frontend devs.</div>
+        <div class="idea-rev">Advanced build · $7/mo · $2–5K/mo potential</div>
+      </div>
+      <div class="idea-card" style="border-color:var(--color-border-success);background:var(--color-background-success);">
+        <span class="idea-tag" style="background:#DCFCE7;color:#166534;">new product · very low competition</span>
+        <div class="idea-title" style="color:var(--color-text-success);">Lighthouse Score Monitor</div>
+        <div class="idea-desc" style="color:var(--color-text-success);opacity:.85;">Runs Lighthouse audits on any page you visit, tracks scores over time, and alerts when a page you care about drops below a threshold. Set-and-forget performance watchdog.</div>
+        <div class="idea-rev">Intermediate build · $5/mo · underserved niche</div>
+      </div>
+      <div class="idea-card" style="border-color:var(--color-border-success);background:var(--color-background-success);">
+        <span class="idea-tag" style="background:#DCFCE7;color:#166534;">new product · very low competition</span>
+        <div class="idea-title" style="color:var(--color-text-success);">Webpage → Structured Data</div>
+        <div class="idea-desc" style="color:var(--color-text-success);opacity:.85;">Select any content on a page, AI extracts it into structured JSON or CSV. For researchers, marketers, and no-coders who manually copy-paste table data. 5 free, $9/mo unlimited.</div>
+        <div class="idea-rev">AI-powered · $2–6K/mo · beginner build</div>
+      </div>
+    </div>
+  </div>
+
+</div>

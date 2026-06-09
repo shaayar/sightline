@@ -7,7 +7,7 @@ import { ProblemSection } from "@/components/ProblemSection";
 import { FeatureShowcase } from "@/components/FeatureShowcase";
 // import { ComparisonTable } from "@/components/ComparisonTable";
 import { PricingPreview } from "@/components/PricingPreview";
-// import { CTASection } from "@/components/CTASection";
+import { CTASection } from "@/components/CTASection";
 
 export default function Home() {
   return (
@@ -26,8 +26,8 @@ export default function Home() {
       <PricingPreview />
       {/* 
       <ComparisonTable />
-      <CTASection /> 
       */}
+      <CTASection /> 
     </Column>
   );
 }

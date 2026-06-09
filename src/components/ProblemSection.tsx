@@ -55,11 +55,12 @@ export const ProblemSection: React.FC<
         <Column
             fillWidth
             horizontal="center"
-            borderTop="neutral-medium"
             {...flex}
-        >
+            paddingY="xl"
+            >
             <Row
                 fillWidth
+                borderTop="neutral-medium"
                 horizontal="center"
                 borderLeft="neutral-medium"
                 borderRight="neutral-medium"

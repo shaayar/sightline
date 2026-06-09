@@ -326,7 +326,7 @@ export const Footer = (flex: React.ComponentProps<typeof Column>) => {
         <Row gap="8" paddingY="24" center maxWidth="xl" textVariant="label-default-s" onBackground="neutral-medium" borderX="neutral-alpha-medium">
           Built by Developers, for Developers {" "}
           <SmartLink href="#" unstyled>
-            <Avatar size="xs" src="/images/creators/lorant.jpg"/>
+            <Avatar size="l" src="/images/creators/creator.jpg"/>
             Sightline Team
           </SmartLink>
         </Row>

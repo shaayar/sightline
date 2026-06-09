@@ -44,7 +44,7 @@ export const Header: React.FC<HeaderProps> = ({ ...flex }) => {
       horizontal="between"
       vertical="center"
       paddingX="l"
-      paddingY="m"
+      paddingY="s"
       background="page"
       position="sticky"
       top="0"
@@ -58,13 +58,13 @@ export const Header: React.FC<HeaderProps> = ({ ...flex }) => {
           dark
           wordmark="/trademarks/wordmark-dark.svg"
           href="/"
-          size="s"
+          size="m"
         />
         <Logo
           light
           wordmark="/trademarks/wordmark-light.svg"
           href="/"
-          size="s"
+          size="m"
         />
       </Row>
 
@@ -89,13 +89,12 @@ export const Header: React.FC<HeaderProps> = ({ ...flex }) => {
 
       {/* Desktop CTA */}
       <Row
-        gap="m"
         vertical="center"
         s={{ hide: true }}
       >
         <Button
           href="/pricing"
-          size="s"
+          size="m"
         >
           Install Free
         </Button>

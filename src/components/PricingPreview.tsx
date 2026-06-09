@@ -48,22 +48,22 @@ const plans = {
     ],
   },
 
-  team: {
-    name: "Team",
+  lifetime: {
+    name: "Lifetime",
     href: "/pricing",
     color: "neutral" as "neutral" | "brand" | "accent",
     gradient: false,
     price: {
-      original: "144",
-      discounted: "144",
+      original: "59",
+      discounted: "29",
     },
     features: [
       "Everything in Pro",
-      "Shared guide presets",
-      "Team collaboration tools",
-      "Priority support",
+      "Pay once, own forever",
+      "All future updates",
+      "Early access features",
     ],
-  },
+  }
 };
 
 interface PlanCardProps extends React.ComponentProps<typeof Row> {
@@ -81,7 +81,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ id, plan, ...flex }) => {
       id={plan.name}
       border={borderColor}
       fill
-      
+
       overflow="hidden"
       {...flex}
     >
@@ -150,32 +150,32 @@ const PlanCard: React.FC<PlanCardProps> = ({ id, plan, ...flex }) => {
 
 export const PricingPreview: React.FC<React.ComponentProps<typeof Row>> = ({ ...flex }) => {
   return (
-    <Scroller maxWidth="xl" fillWidth paddingY="l">
-    <Row gap="-1" {...flex}>
-      <Flex fillWidth paddingTop="40" minWidth={20}>
-        <PlanCard id="free" plan={plans.free} leftRadius="l" />
-      </Flex>
-      <Column fillWidth minWidth={20}>
-        <Flex
-          paddingX="16"
-          minHeight="40"
-          gap="8"
-          center
-          topRadius="m"
-          onBackground="brand-strong"
-          borderTop="brand-alpha-medium"
-          borderLeft="brand-alpha-medium"
-          borderRight="brand-alpha-medium"
-          textVariant="label-default-m"
-        >
-          ⭐ Best Value ⭐
+    <Scroller fillWidth paddingY="xl">
+      <Row gap="0" horizontal="center" fillWidth {...flex}>
+        <Flex fillWidth paddingTop="40" minWidth={20}>
+          <PlanCard id="free" plan={plans.free} leftRadius="l" />
         </Flex>
-        <PlanCard id="pro" plan={plans.pro} zIndex={1} />
-      </Column>
-      <Flex fillWidth paddingTop="40" minWidth={20}>
-        <PlanCard id="team" plan={plans.team} rightRadius="l" />
-      </Flex>
-    </Row>
+        <Column fillWidth minWidth={20}>
+          <Flex
+            paddingX="16"
+            minHeight="40"
+            gap="8"
+            center
+            topRadius="m"
+            onBackground="brand-strong"
+            borderTop="brand-alpha-medium"
+            borderLeft="brand-alpha-medium"
+            borderRight="brand-alpha-medium"
+            textVariant="label-default-m"
+          >
+            ⭐ Best Value ⭐
+          </Flex>
+          <PlanCard id="pro" plan={plans.pro} zIndex={1} />
+        </Column>
+        <Flex fillWidth paddingTop="40" minWidth={20}>
+          <PlanCard id="lifetime" plan={plans.lifetime} rightRadius="l" />
+        </Flex>
+      </Row>
     </Scroller>
   );
 };

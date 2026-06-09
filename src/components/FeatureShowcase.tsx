@@ -47,7 +47,7 @@ const stickyCards: StickyCard[] = [
 
 export const FeatureShowcase = (flex: React.ComponentProps<typeof Column>) => {
   return (
-    <Column fillWidth gap="64" {...flex}>
+    <Column fillWidth gap="xl" paddingY="xl" {...flex}>
       {stickyCards.map((card, index) => (
         <Row key={index} fillWidth position="sticky" paddingTop={card.paddingTop} paddingX={card.paddingX}>
           <Row fillWidth height="80dvh" radius="l" border maxHeight={44} center align="center" gap="xl" background="page" overflow="hidden" s={{direction: "column"}}>

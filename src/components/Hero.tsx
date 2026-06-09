@@ -5,7 +5,10 @@ import {
     Text,
     Button,
     Badge,
+    Media,
 } from "@once-ui-system/core";
+
+import Image from "next/image";
 
 export function Hero() {
     return (
@@ -13,7 +16,8 @@ export function Hero() {
             fillWidth
             maxWidth="xl"
             horizontal="center"
-            paddingY="128"
+            paddingTop="128"
+            paddingBottom="xl"
             gap="xl"
         >
             <Column
@@ -79,7 +83,6 @@ export function Hero() {
 
             <Column
                 fillWidth
-                padding="l"
                 radius="xl"
                 border="neutral-alpha-medium"
                 background="surface"
@@ -87,13 +90,13 @@ export function Hero() {
                     minHeight: "500px",
                 }}
             >
-                <Text variant="heading-strong-l">
-                    Product Preview
-                </Text>
-
-                <Text onBackground="neutral-weak">
-                    Hero screenshot/mockup goes here.
-                </Text>
+                <Media
+                    src="/images/preview.png"
+                    alt="Extension Preview"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    radius="l"
+                    border="neutral-alpha-medium"
+                />
             </Column>
         </Column>
     );
