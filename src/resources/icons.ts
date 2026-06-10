@@ -6,7 +6,7 @@ import {
 
 import {
   FaGithub,
-  FaDiscord,
+  FaDiscord,FaBookOpen
 } from "react-icons/fa";
 
 import {
@@ -19,6 +19,7 @@ export const iconLibrary: Record<string, IconType> = {
   github: FaGithub,
   discord: FaDiscord,
   email: MdEmail,
+  book: FaBookOpen,
 };
 
 export type IconLibrary = typeof iconLibrary;

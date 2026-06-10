@@ -36,7 +36,7 @@ export function Hero() {
                 >
                     CSS Debugging.
                     <br />
-                    <Text onBackground="brand-weak" >
+                    <Text onBackground="brand-weak" weight="strong" >
                         Finally Visual.
                     </Text>
                 </Heading>

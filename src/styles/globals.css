@@ -50,5 +50,10 @@ img {
 .gradient-text {
   background: linear-gradient(90deg, #1d4ed8, #10b981);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
+}
+
+:root {
+  --font-family-primary: var(--font-seasons);
 }

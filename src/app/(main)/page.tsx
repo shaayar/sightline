@@ -5,8 +5,6 @@ import { baseURL, meta } from "@/resources/seo";
 import { Hero } from "@/components/Hero";
 import { ProblemSection } from "@/components/ProblemSection";
 import { FeatureShowcase } from "@/components/FeatureShowcase";
-// import { ComparisonTable } from "@/components/ComparisonTable";
-import { PricingPreview } from "@/components/PricingPreview";
 import { CTASection } from "@/components/CTASection";
 
 export default function Home() {
@@ -23,10 +21,6 @@ export default function Home() {
       <Hero />
       <ProblemSection />
       <FeatureShowcase />
-      <PricingPreview />
-      {/* 
-      <ComparisonTable />
-      */}
       <CTASection /> 
     </Column>
   );

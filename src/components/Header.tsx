@@ -12,7 +12,7 @@ import {
   SmartLink,
 } from "@once-ui-system/core";
 
-interface HeaderProps extends React.ComponentProps<typeof Row> {}
+interface HeaderProps extends React.ComponentProps<typeof Row> { }
 
 const navItems = [
   {
@@ -28,7 +28,7 @@ const navItems = [
     href: "/faq",
   },
   {
-    label: "Support",
+    label: "Contact Us",
     href: "/support",
   },
 ];
@@ -80,6 +80,9 @@ export const Header: React.FC<HeaderProps> = ({ ...flex }) => {
             href={item.href}
             style={{
               opacity: pathname === item.href ? 1 : 0.75,
+              color: pathname === item.href ? '#2656d7' : 'gray',
+              padding: '0.25rem 0.5rem',
+
             }}
           >
             {item.label}

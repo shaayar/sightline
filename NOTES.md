@@ -8,3 +8,4 @@
 
 - We can improve the Background of Hero section and may be try a different layout for it
 - Change the images in `FeatureShowcase.tsx` file with proper images of features instead of dummy images
+- We have the font files, but they are to be applied where needed

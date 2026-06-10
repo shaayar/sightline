@@ -1,1 +1,57 @@
-<svg width="128" height="128" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="13" fill="#1D4ED8"/><line x1="26" y1="8" x2="26" y2="44" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/><line x1="8" y1="26" x2="44" y2="26" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" opacity=".6"/><circle cx="26" cy="26" r="7" stroke="white" stroke-width="2" fill="none"/><circle cx="26" cy="26" r="2.5" fill="white"/><path d="M10 16 L10 10 L16 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M42 16 L42 10 L36 10" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M10 36 L10 42 L16 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/><path d="M42 36 L42 42 L36 42" stroke="white" stroke-width="1.5" fill="none" opacity=".8"/></svg>
+<svg width="128" height="128" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="52" height="52" rx="13" fill="#1D4ED8"/>
+
+  <!-- Guide lines -->
+  <line x1="26" y1="8" x2="26" y2="44" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-dasharray="1.5 4" opacity="0.28" />
+  <line x1="8" y1="26" x2="44" y2="26" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-dasharray="1.5 4" opacity="0.28"/>
+
+  <!-- Center target -->
+  <circle
+    cx="26"
+    cy="26"
+    r="7"
+    stroke="white"
+    stroke-width="2"
+  />
+
+  <circle
+    cx="26"
+    cy="26"
+    r="2.5"
+    fill="white"
+  />
+
+  <!-- Focus corners -->
+  <path
+    d="M10 16V10H16"
+    stroke="white"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.75"
+  />
+  <path
+    d="M42 16V10H36"
+    stroke="white"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.75"
+  />
+  <path
+    d="M10 36V42H16"
+    stroke="white"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.75"
+  />
+  <path
+    d="M42 36V42H36"
+    stroke="white"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.75"
+  />
+</svg>
