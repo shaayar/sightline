@@ -4,34 +4,30 @@ const features = [
   {
     title: "Guide Lines That Sync Across Tabs",
     description:
-      "Drop horizontal and vertical guides at any pixel position. Guides stay synced across tabs, persist after browser restart, and help you recreate layouts with precision.",
+    "Drop horizontal and vertical guides at any pixel position. Guides stay synced across tabs, persist after browser restart, and help you recreate layouts with precision.",
     // icon: "refresh",
-    // image: "/images/features/guides.png",
-    image: "/images/dummy.jpg",
+    image: "/images/feature1.png",
   },
   {
     title: "Box Model Inspector",
     description:
       "Hover any element to instantly visualize margins, padding, borders, and content areas. See spacing values without digging through DevTools.",
     // icon: "refresh",
-    // image: "/images/features/inspector.png",
-    image: "/images/dummy.jpg",
+    image: "/images/feature2.png",
   },
   {
     title: "Typography & Color Inspection",
     description:
       "Inspect font family, size, weight, line-height, and colors directly on the page. Perfect for design QA and implementation reviews.",
     // icon: "refresh",
-    // image: "/images/features/typography.png",
-    image: "/images/dummy.jpg",
+    image: "/images/feature3.png",
   },
   {
     title: "CSS Cascade Debugger",
     description:
       "See every matching CSS rule, specificity score, overridden property, and winning selector. Finally understand why your CSS is or isn't applying.",
     // icon: "refresh",
-    // image: "/images/features/cascade.png",
-    image: "/images/dummy.jpg",
+    image: "/images/feature4.png",
   },
 ];
 
