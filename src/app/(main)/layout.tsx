@@ -65,7 +65,7 @@ export default function RootLayout({
             'viz-style': dataStyle.variant,
           }}
         />
-        <meta name="google-site-verification" content="bOT1VGpBrnFkacrK6rVPhnBcP0eufbs1nJqUpuiS73E" />
+        <meta name="google-site-verification" content="6Z4wzQGE7Cw5Yw8NtFUiwqW0VH8mBFfgwMoFajKTuhM" />
       </head>
       <Providers>
         <Column as="body" background="page" cz-shortcut-listen="false" fillWidth margin="0" padding="0">
