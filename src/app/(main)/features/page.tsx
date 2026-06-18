@@ -52,7 +52,7 @@ export default function FeaturesPage() {
           wrap
           horizontal="center"
         >
-          <Button href="/pricing">
+          <Button href="https://chromewebstore.google.com/detail/sightline-%E2%80%94-design-inspec/lkkghjigcgedhfhbhlbnmeipiocicled">
             Install Free on Chrome
           </Button>
 

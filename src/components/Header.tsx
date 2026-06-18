@@ -96,7 +96,7 @@ export const Header: React.FC<HeaderProps> = ({ ...flex }) => {
         s={{ hide: true }}
       >
         <Button
-          href="/pricing"
+          href="https://chromewebstore.google.com/detail/sightline-%E2%80%94-design-inspec/lkkghjigcgedhfhbhlbnmeipiocicled"
           size="m"
         >
           Install Free
@@ -134,7 +134,7 @@ export const Header: React.FC<HeaderProps> = ({ ...flex }) => {
           ))}
 
           <Button
-            href="/pricing"
+            href="https://chromewebstore.google.com/detail/sightline-%E2%80%94-design-inspec/lkkghjigcgedhfhbhlbnmeipiocicled"
             fillWidth
           >
             Install Free

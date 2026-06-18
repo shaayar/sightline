@@ -60,7 +60,7 @@ export function Hero() {
                     horizontal="center"
                     wrap
                 >
-                    <Button href="/features">
+                    <Button href="https://chromewebstore.google.com/detail/sightline-%E2%80%94-design-inspec/lkkghjigcgedhfhbhlbnmeipiocicled">
                         Install Free on Chrome
                     </Button>
 

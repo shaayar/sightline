@@ -135,7 +135,7 @@ export const Footer = (flex: React.ComponentProps<typeof Column>) => {
                 hold={2000}
                 trigger="instant"
               />
-              <Button data-border="rounded" id="hero-cta-button" href="/pricing" arrowIcon>
+              <Button data-border="rounded" id="hero-cta-button" href="https://chromewebstore.google.com/detail/sightline-%E2%80%94-design-inspec/lkkghjigcgedhfhbhlbnmeipiocicled" arrowIcon>
                 Install Free
               </Button>
             </Column>
