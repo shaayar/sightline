@@ -67,10 +67,7 @@ export default function TermsPage() {
           </Heading>
 
           <Text onBackground="neutral-medium">
-            By installing, accessing, or using Sightline,
-            you agree to be bound by these Terms of Service.
-            If you do not agree with these terms, do not use
-            the extension.
+            By installing, accessing, or using Sightline, you agree to be bound by these Terms of Service. If you do not agree with these terms, do not use the extension.
           </Text>
         </Column>
 
@@ -80,15 +77,11 @@ export default function TermsPage() {
           </Heading>
 
           <Text onBackground="neutral-medium">
-            Sightline is a browser extension that provides
-            visual inspection and debugging tools for web
-            developers and designers.
+            Sightline is a browser extension that provides visual inspection and debugging tools for web developers and designers.
           </Text>
 
           <Text onBackground="neutral-medium">
-            Features may include guide lines, box model
-            inspection, typography analysis, color inspection,
-            and CSS cascade debugging.
+            Features may include guide lines, box model inspection, typography analysis, color inspection, and CSS cascade debugging.
           </Text>
         </Column>
 
@@ -98,14 +91,11 @@ export default function TermsPage() {
           </Heading>
 
           <Text onBackground="neutral-medium">
-            Certain features may be available at no cost,
-            while others may require a paid subscription
-            or one-time purchase.
+            Certain features may be available at no cost, while others may require a paid subscription or one-time purchase.
           </Text>
 
           <Text onBackground="neutral-medium">
-            Feature availability, pricing, and limitations
-            may change over time.
+            Feature availability, pricing, and limitations may change over time.
           </Text>
         </Column>
 
@@ -115,14 +105,11 @@ export default function TermsPage() {
           </Heading>
 
           <Text onBackground="neutral-medium">
-            Paid plans may be offered through third-party
-            payment providers.
+            Paid plans may be offered through third-party payment providers.
           </Text>
 
           <Text onBackground="neutral-medium">
-            Unless otherwise stated, purchases may be eligible
-            for a refund within 14 days of the original purchase
-            date.
+            Unless otherwise stated, purchases may be eligible for a refund within 14 days of the original purchase date.
           </Text>
 
           <Text onBackground="neutral-medium">
@@ -137,15 +124,11 @@ export default function TermsPage() {
           </Heading>
 
           <Text onBackground="neutral-medium">
-            You agree not to use Sightline in any manner that
-            violates applicable laws, regulations, or the rights
-            of others.
+            You agree not to use Sightline in any manner that violates applicable laws, regulations, or the rights of others.
           </Text>
 
           <Text onBackground="neutral-medium">
-            You may not attempt to reverse engineer, abuse,
-            disrupt, or interfere with the extension's normal
-            operation.
+            You may not attempt to reverse engineer, abuse, disrupt, or interfere with the extension's normal operation.
           </Text>
         </Column>
 
@@ -155,14 +138,11 @@ export default function TermsPage() {
           </Heading>
 
           <Text onBackground="neutral-medium">
-            Sightline, including its branding, design,
-            documentation, and software, is protected by
-            applicable intellectual property laws.
+            Sightline, including its branding, design, documentation, and software, is protected by applicable intellectual property laws.
           </Text>
 
           <Text onBackground="neutral-medium">
-            No ownership rights are transferred through
-            use of the extension.
+            No ownership rights are transferred through use of the extension.
           </Text>
         </Column>
 
@@ -172,17 +152,11 @@ export default function TermsPage() {
           </Heading>
 
           <Text onBackground="neutral-medium">
-            Sightline is provided on an "as is" and
-            "as available" basis without warranties of
-            any kind.
+            Sightline is provided on an "as is" and "as available" basis without warranties of any kind.
           </Text>
 
           <Text onBackground="neutral-medium">
-            To the maximum extent permitted by law,
-            we shall not be liable for any indirect,
-            incidental, special, consequential, or
-            punitive damages arising from the use
-            of the extension.
+            To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of the extension.
           </Text>
         </Column>
 
@@ -192,14 +166,11 @@ export default function TermsPage() {
           </Heading>
 
           <Text onBackground="neutral-medium">
-            We may modify, suspend, or discontinue
-            features or services at any time without
-            prior notice.
+            We may modify, suspend, or discontinue features or services at any time without prior notice.
           </Text>
 
           <Text onBackground="neutral-medium">
-            We do not guarantee uninterrupted or
-            error-free operation.
+            We do not guarantee uninterrupted or error-free operation.
           </Text>
         </Column>
 
@@ -209,10 +180,7 @@ export default function TermsPage() {
           </Heading>
 
           <Text onBackground="neutral-medium">
-            These Terms of Service shall be governed
-            by and interpreted in accordance with the
-            laws applicable in the jurisdiction in which
-            the service operator resides.
+            These Terms of Service shall be governed by and interpreted in accordance with the laws applicable in the jurisdiction in which the service operator resides.
           </Text>
         </Column>
 
@@ -222,10 +190,7 @@ export default function TermsPage() {
           </Heading>
 
           <Text onBackground="neutral-medium">
-            We may update these Terms of Service from
-            time to time. Continued use of Sightline
-            after changes become effective constitutes
-            acceptance of the revised terms.
+            We may update these Terms of Service from time to time. Continued use of Sightline after changes become effective constitutes acceptance of the revised terms.
           </Text>
         </Column>
 
