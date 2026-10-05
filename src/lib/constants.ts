@@ -45,7 +45,7 @@ export const featureHighlights = [
 export const pricingTiers = [
   {
     title: "Free",
-    price: "$0",
+    price: "₹0",
     subtitle: "Always free",
     features: [
       "Max 5 guide lines",
@@ -57,7 +57,7 @@ export const pricingTiers = [
   },
   {
     title: "Pro",
-    price: "$5/mo",
+    price: "₹499/mo",
     subtitle: "Most popular",
     features: [
       "Unlimited guides",
@@ -66,11 +66,11 @@ export const pricingTiers = [
       "Priority feature requests",
     ],
     highlight: true,
-    button: { label: "Start 7-Day Trial", href: "/support" },
+    button: { label: "Get Pro — ₹499/mo", href: "/upgrade" },
   },
   {
     title: "Team",
-    price: "$12/seat/mo",
+    price: "Contact us",
     subtitle: "Minimum 3 seats",
     features: [
       "Everything in Pro",
@@ -167,7 +167,7 @@ export const faqSections = [
       {
         question: "How much does Pro cost in my country?",
         answer:
-          "Pricing is shown in USD and your card provider will convert it to your local currency at checkout.",
+          "Pro is ₹499/month, billed in INR via Razorpay at checkout.",
       },
       {
         question: "Can I cancel my subscription?",

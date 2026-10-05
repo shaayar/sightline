@@ -19,6 +19,7 @@ const plans = {
     price: {
       original: "0",
       discounted: "0",
+      period: "",
     },
     features: [
       "Up to 5 guide lines",
@@ -30,12 +31,13 @@ const plans = {
 
   pro: {
     name: "Pro",
-    href: "/pricing",
+    href: "/upgrade",
     color: "brand" as "neutral" | "brand" | "accent",
     gradient: true,
     price: {
-      original: "59",
-      discounted: "29",
+      original: "699",
+      discounted: "499",
+      period: "/mo",
     },
     features: [
       "Unlimited guide lines",
@@ -54,8 +56,9 @@ const plans = {
     color: "neutral" as "neutral" | "brand" | "accent",
     gradient: false,
     price: {
-      original: "59",
-      discounted: "29",
+      original: "4999",
+      discounted: "2999",
+      period: " one-time",
     },
     features: [
       "Everything in Pro",
@@ -114,13 +117,15 @@ const PlanCard: React.FC<PlanCardProps> = ({ id, plan, ...flex }) => {
             <Text align="left" variant="heading-default-xl">
               {plan.price.original !== plan.price.discounted && (
                 <Text onBackground="neutral-weak" style={{ textDecoration: "line-through" }}>
-                  ${plan.price.original}
+                  ₹{plan.price.original}
                 </Text>
               )}{" "}
-              ${plan.price.discounted}{" "}
-              <Text onBackground="neutral-strong" variant="body-default-s">
-                / year
-              </Text>
+              ₹{plan.price.discounted}
+              {plan.price.period && (
+                <Text onBackground="neutral-strong" variant="body-default-s">
+                  {plan.price.period}
+                </Text>
+              )}
             </Text>
           </Column>
           <Column fillWidth gap="16" paddingTop="20" paddingBottom="12">

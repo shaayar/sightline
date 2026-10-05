@@ -18,7 +18,7 @@ export const pageMetadata = {
     path: "/features",
   },
   pricing: {
-    title: "Sightline Pricing - Free + Pro ($5/mo) + Team",
+    title: "Sightline Pricing - Free + Pro + Team",
     description: "Flexible pricing for web developers: free, Pro, or Team plans with advanced CSS inspection tools.",
     path: "/pricing",
   },

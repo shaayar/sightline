@@ -1,15 +1,9 @@
-import '@once-ui-system/core/css/styles.css';
-import '@once-ui-system/core/css/tokens.css';
-import '@/resources/custom.css'
+import classNames from 'classnames';
 
-import classNames from "classnames";
-
-import { baseURL, meta } from "@/resources/seo";
-import { fonts, style, dataStyle } from "@/resources/once-ui.config";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { Meta, Schema, Column, Flex, Mask, MatrixFx, ThemeInit } from "@once-ui-system/core";
-import { Providers } from '@/components/Providers';
+import { baseURL, meta } from '@/resources/seo';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { Meta, Schema, Column, Flex, Mask, MatrixFx } from '@once-ui-system/core';
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -24,24 +18,13 @@ export async function generateMetadata() {
   });
 }
 
-export default function RootLayout({
+export default function MainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <Flex
-      suppressHydrationWarning
-      as="html"
-      lang="en"
-      fillWidth
-      className={classNames(
-        fonts.heading.variable,
-        fonts.body.variable,
-        fonts.label.variable,
-        fonts.code.variable,
-      )}
-    >
+    <>
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -49,48 +32,28 @@ export default function RootLayout({
         description={meta.home.description}
         path={meta.home.path}
       />
-      <head>
-        <ThemeInit
-          config={{
-            theme: style.theme,
-            brand: style.brand,
-            accent: style.accent,
-            neutral: style.neutral,
-            solid: style.solid,
-            'solid-style': style.solidStyle,
-            border: style.border,
-            surface: style.surface,
-            transition: style.transition,
-            scaling: style.scaling,
-            'viz-style': dataStyle.variant,
-          }}
-        />
-        <meta name="google-site-verification" content="6Z4wzQGE7Cw5Yw8NtFUiwqW0VH8mBFfgwMoFajKTuhM" />
-      </head>
-      <Providers>
-        <Column as="body" background="page" cz-shortcut-listen="false" fillWidth margin="0" padding="0">
-          <Column fillWidth maxHeight="100dvh" aspectRatio="1" horizontal="center" position="absolute" top="0" left="0">
-            <Mask maxWidth="m" x={50} y={0} radius={50}>
-              <MatrixFx
-                size={1.5}
-                spacing={5}
-                fps={24}
-                colors={["brand-solid-strong"]}
-                flicker
-              />
-            </Mask>
-          </Column>
-          <Header />
-          <main className="relative z-10">
-            <Column fillWidth horizontal="center" paddingX="l">
-              <Column fillWidth maxWidth="xl">
-                {children}
-              </Column>
-            </Column>
-          </main>
-          <Footer />
+      <Column fillWidth margin="0" padding="0">
+        <Column fillWidth maxHeight="100dvh" aspectRatio="1" horizontal="center" position="absolute" top="0" left="0">
+          <Mask maxWidth="m" x={50} y={0} radius={50}>
+            <MatrixFx
+              size={1.5}
+              spacing={5}
+              fps={24}
+              colors={['brand-solid-strong']}
+              flicker
+            />
+          </Mask>
         </Column>
-      </Providers>
-    </Flex>
+        <Header />
+        <main className={classNames('relative', 'z-10')}>
+          <Column fillWidth horizontal="center" paddingX="l">
+            <Column fillWidth maxWidth="xl">
+              {children}
+            </Column>
+          </Column>
+        </main>
+        <Footer />
+      </Column>
+    </>
   );
 }
